@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.workday.product.tests.TestOne">
+      <class name="com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose">
         <methods>
-          <include name="run"/>
-          <include name="opne"/>
+          <include name="closeAndCosolidateTest"/>
+          <include name="setup"/>
+          <include name="destroy"/>
         </methods>
-      </class> <!-- com.workday.product.tests.TestOne -->
+      </class> <!-- com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

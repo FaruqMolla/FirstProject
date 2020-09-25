@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-24T14:39:53 EDT" name="Products" finished-at="2020-09-24T14:43:14 EDT" duration-ms="200990">
+  <suite started-at="2020-09-25T10:36:32 EDT" name="Default suite" finished-at="2020-09-25T10:37:31 EDT" duration-ms="58731">
     <groups>
     </groups>
-    <test started-at="2020-09-24T14:39:53 EDT" name="AuditAndControls" finished-at="2020-09-24T14:43:14 EDT" duration-ms="200990">
-      <class name="com.workday.product.tests.FinancialManagemnt_AccountingFinance">
-        <test-method signature="fmTest()[pri:0, instance:com.workday.product.tests.FinancialManagemnt_AccountingFinance@55f616cf]" started-at="2020-09-24T14:41:55 EDT" name="fmTest" finished-at="2020-09-24T14:43:14 EDT" duration-ms="79107" status="PASS">
+    <test started-at="2020-09-25T10:36:32 EDT" name="Default test" finished-at="2020-09-25T10:37:31 EDT" duration-ms="58731">
+      <class name="com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose@5f683daf]" started-at="2020-09-25T10:36:32 EDT" name="setup" finished-at="2020-09-25T10:37:08 EDT" duration-ms="35697" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fmTest -->
-      </class> <!-- com.workday.product.tests.FinancialManagemnt_AccountingFinance -->
-      <class name="com.workday.product.tests.FinancialManagemnt_AuditAndControls">
-        <test-method signature="auditTest()[pri:0, instance:com.workday.product.tests.FinancialManagemnt_AuditAndControls@609db43b]" started-at="2020-09-24T14:39:53 EDT" name="auditTest" finished-at="2020-09-24T14:41:55 EDT" duration-ms="121619" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="closeAndCosolidateTest()[pri:0, instance:com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose@5f683daf]" started-at="2020-09-25T10:37:08 EDT" name="closeAndCosolidateTest" finished-at="2020-09-25T10:37:29 EDT" duration-ms="21481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- auditTest -->
-      </class> <!-- com.workday.product.tests.FinancialManagemnt_AuditAndControls -->
-    </test> <!-- AuditAndControls -->
-  </suite> <!-- Products -->
+        </test-method> <!-- closeAndCosolidateTest -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose@5f683daf]" started-at="2020-09-25T10:37:29 EDT" name="destroy" finished-at="2020-09-25T10:37:31 EDT" duration-ms="1371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- com.workday.product.tests.FinancialManagemnt_ConsolidateAndClose -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
