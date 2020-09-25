@@ -41,7 +41,8 @@ public void closeAndCosolidateTest() {
 	act.moveToElement(finance).build().perform();
 	//WebElement close=driver.findElement(By.xpath("//a[contains(text(),'Consolidate and Close')]"));
 	act.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Consolidate and Close')]"))).click().build().perform();
-
+   String expectedTitle=driver.getTitle();
+   System.out.println("expected title is :"+ expectedTitle);
 }
 
 @AfterTest
