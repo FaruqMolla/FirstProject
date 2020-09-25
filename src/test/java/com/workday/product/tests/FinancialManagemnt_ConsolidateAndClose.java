@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -43,6 +44,9 @@ public void closeAndCosolidateTest() {
 	act.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Consolidate and Close')]"))).click().build().perform();
    String expectedTitle=driver.getTitle();
    System.out.println("expected title is :"+ expectedTitle);
+   String actualTitle="Financial Consolidation and Close Software | Workday";
+   Assert.assertEquals(actualTitle, expectedTitle);
+   System.out.println("test pass");
 }
 
 @AfterTest
