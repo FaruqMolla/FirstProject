@@ -49,12 +49,31 @@ public  WebElement auditAndFinance() {
 	wait.until(ExpectedConditions.elementToBeClickable(audit)).click();
 	int size=driver.findElements(By.tagName("iframe")).size();
 	System.out.println(" iframe size is "+size);
-	driver.switchTo().frame(0);
-	int Innersize=driver.findElements(By.tagName("iframe")).size();
-	System.out.println(" iframe nsize is "+Innersize);
+	
+	
+	//driver.switchTo().frame(0);
+
+	
+	//int Innersize=driver.findElements(By.tagName("iframe")).size();
+	//System.out.println(" iframe nsize is "+Innersize);
+
 	//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Lead[FirstName]")));
-	//driver.findElement(By.xpath("//input[@id='Lead[FirstName]")).sendKeys("Faruq");
+		
+		driver.findElement(By.xpath("//input[@id='Lead[FirstName]']")).sendKeys("Faruq");
+		
+		driver.findElement(By.xpath("//input[@id='Lead[LastName]']")).sendKeys("Molla");
+		
+		driver.findElement(By.xpath("//input[@id='Lead[Lead[Email]]']")).sendKeys("Faruq");
+		
+		driver.findElement(By.xpath("//input[@id='Lead[FirstName]']")).sendKeys("Faruq");
+		
+		driver.findElement(By.xpath("//input[@id='Lead[FirstName]']")).sendKeys("Faruq");
+		
+		driver.findElement(By.xpath("//input[@id='Lead[FirstName]']")).sendKeys("Faruq");
+		
+		//input[@id='Lead[FirstName]
 	// need work on 
+
 	return null;
 	
 }
